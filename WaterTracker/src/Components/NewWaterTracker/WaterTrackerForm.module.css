@@ -31,7 +31,8 @@
   .new-water-tracker__action {
     text-align: center;
   }
-  button:hover {
+  button:hover,
+  button:active{
     outline-color: transparent;
     outline-style:solid;
     box-shadow: 0 0 0 1px #bfbadd;

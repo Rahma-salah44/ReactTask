@@ -4,7 +4,7 @@ import Header from "./Layout/Header";
 import NewWaterTracker from "./Components/NewWaterTracker/NewWaterTracker";
 import WaterSummary from "./Components/WaterTrackers/WaterSummary";
 
-import WaterTrackerContext from "./Store/WaterTrackerContex";
+import Users from "./Components/Users/Users";
 
 const content = [
   [
@@ -33,14 +33,22 @@ const content = [
 ];
 
 export default function App() {
-  const [activeContentIndex, setActiveContentIndex] = useState(0);
+  const [usersIsShown,setUsersIsShown] = useState(false)
+  const showUsersHandler = ()=>{
+    setUsersIsShown(true);
+  }
+
+  const hideUsersHandler = ()=>{
+    setUsersIsShown(false);
+  }
 
   return (
     <Fragment>
-<Header/>
+       {usersIsShown && <Users onClose={hideUsersHandler}/>}
+      <Header  onShowUsers={showUsersHandler}/>
+
 <WaterSummary/>
 <NewWaterTracker/>
-
     </Fragment>
   );
 }

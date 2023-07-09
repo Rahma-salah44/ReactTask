@@ -13,7 +13,6 @@ const NewWaterTracker = () => {
     setFormData(
         {...enteredUserInput}
     )
-    console.log(formData)
   };
 
   return (
