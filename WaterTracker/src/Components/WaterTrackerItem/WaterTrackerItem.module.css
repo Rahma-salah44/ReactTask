@@ -1,0 +1,61 @@
+.water-tracker-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(99, 161, 211, 0.25);
+
+
+    background-color: #1872a9;
+    border: 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+  }
+  
+  .water-tracker-item__name {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .water-tracker-item h2 {
+    color: #3a3a3a;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+  }
+  
+  .water-tracker-item__amount {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #40005d;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  
+  @media (min-width: 580px) {
+    .water-tracker-item__name {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+  
+    .water-tracker-item__name h2 {
+      font-size: 1.25rem;
+    }
+  
+    .water-tracker-item__amount {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }

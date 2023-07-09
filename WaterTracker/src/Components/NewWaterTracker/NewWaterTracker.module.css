@@ -1,0 +1,38 @@
+.new-water-tracker {
+    background-color: #1872a9;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .new-water-tracker button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #094e79;
+    background-color: #094e79;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .new-water-tracker button:hover,
+  .new-water-tracker button:active {
+    background-color: #094e79;
+    border-color: #094e79;
+  }
+  
+  .new-water-tracker button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .new-water-tracker button.alternative:hover,
+  .new-water-tracker button.alternative:active {
+    background-color: #1872a9;
+  }

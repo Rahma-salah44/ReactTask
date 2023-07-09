@@ -1,0 +1,15 @@
+smart-tank[orientation=horizontal] {
+    height: 200px;
+}
+
+
+.exceed{
+    border: 2px solid red;
+    border-radius: 5rem;
+    color: black;
+    height: 2rem;
+    padding-top: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 18rem;
+}
